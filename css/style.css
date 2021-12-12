@@ -1,0 +1,41 @@
+
+body{
+    height: 100vh;
+
+    background: url('../assets/home/background-home-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    body{
+        height: 100vh;
+        background: url('../assets/home/background-home-tablet.jpg');
+    }
+    .lines{
+        display: none;
+    }
+}
+
+/* START NAVBAR  */
+.navbgs{
+    background-color: rgba(200,200,200,0.1);
+    backdrop-filter: blur(7px);
+}
+
+.lines{
+    width: 380px;
+    height: 1px;
+    background-color: rgba(200,200,200,0.5);
+
+    position: absolute;
+    left: 150px;
+    z-index: 1;
+}
+
+.navmenus.active{
+    border-bottom: 3px solid #fff;
+    margin-right: 2px;
+}
+/* END NAVBAR  */
